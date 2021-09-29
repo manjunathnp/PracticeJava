@@ -11,7 +11,7 @@ public class Pattern3 {
 				System.out.print("*");
 			}
 			System.out.println();
-		}
+		} 
 		
 		for(int i=1; i<=5; i++)
 		{
