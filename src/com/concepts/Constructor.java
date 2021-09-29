@@ -2,7 +2,9 @@ package com.concepts;
 
 public class Constructor 
 {
-	int a = 100;
+	int a=100;
+	int b=200;
+	int c=300;
 	
 	Constructor()
 	{
@@ -27,10 +29,24 @@ public class Constructor
 		System.out.println("Inside Parameterized double, double Constructor");
 	}
 	
+	Constructor(int a, int b, int c)
+	{
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		
+		diplay();
+		System.out.println(a + " | " +b+ " | " +c );
+	}
 
+	public void diplay()
+	{
+		System.out.println(a + " | " +b+ " | " +c );
+	}
+	
 	public static void main(String[] args) 
 	{
-		Constructor c = new Constructor();
+		Constructor c = new Constructor(10, 20, 30);
 	}
 
 }
