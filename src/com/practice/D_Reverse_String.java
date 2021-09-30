@@ -8,7 +8,7 @@ public class D_Reverse_String {
 	{
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter the String Value: ");
+		System.out.println("Enter the String Value: "); 
 		String str = sc.nextLine();
 		
 		/*// Logic-1

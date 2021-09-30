@@ -6,7 +6,7 @@ public class A_Swap_Two_Numbers {
 
 	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		
 		System.out.println("Enter the value of num1: ");
 		int num1 = sc.nextInt();

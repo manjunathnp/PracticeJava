@@ -13,7 +13,7 @@ public class G_Prime_Number_Check
 		System.out.println("Enter the number: ");
 		int num = sc.nextInt();
 		int count = 0;
-		
+		 
 		if(num > 0)
 		{
 			for(int i=1; i<=num; i++)

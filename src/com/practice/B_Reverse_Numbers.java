@@ -6,7 +6,7 @@ public class B_Reverse_Numbers {
 
 	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		
 		System.out.println("Enter the number: ");
 		int num = sc.nextInt();

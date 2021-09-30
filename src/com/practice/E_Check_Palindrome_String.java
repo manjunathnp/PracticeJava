@@ -10,7 +10,7 @@ public class E_Check_Palindrome_String
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the String: ");
-		String str = sc.nextLine();
+		String str = sc.nextLine(); 
 		String orig = str;
 		
 		String rev = "";

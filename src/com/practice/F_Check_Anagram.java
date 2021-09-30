@@ -25,7 +25,7 @@ public class F_Check_Anagram
 			char[] s2 = str2.toCharArray();
 			
 			Arrays.sort(s1);
-			Arrays.sort(s2);
+			Arrays.sort(s2); 
 			
 			boolean result = Arrays.equals(s1, s2);
 			
