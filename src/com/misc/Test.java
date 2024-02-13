@@ -1,43 +1,59 @@
 package com.misc;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the String: ");
-        String inputStr = sc.nextLine();
+        // Example array
+        int[] numbers = {12, 5, 23, 54, 7, 32, 19};
 
-        /*System.out.println("To lowercase: "+inputStr.toLowerCase());
-        System.out.println("To uppercase: "+inputStr.toUpperCase());*/
+        // Specify the value of 'n'
+        int n = 3; // Change this to find the nth largest number
 
-        toUpperCase(inputStr);
-        toLowerCase(inputStr);
+        int nthLargest = findNthLargest(numbers, n);
 
+        System.out.println("The " + n + "th largest number is: " + nthLargest);
+
+        countEvenOddDigits(numbers);
     }
-    private static void toUpperCase(String inputStr){
-        char[] charArray = inputStr.toCharArray();
-        for(int i=0; i<charArray.length; i++){
-            if(charArray[i] >= 'a' && charArray[i] <= 'z'){
-                charArray[i] -= 32;
+
+    // Method to find the nth largest number in an array
+    private static int findNthLargest(int[] arr, int n) {
+        // Sort the array in descending order
+        Arrays.sort(arr);
+        int length = arr.length;
+
+        // Ensure n is within bounds
+        if (n > 0 && n <= length) {
+            // Return the nth largest number
+            return arr[length - n];
+        } else {
+            System.out.println("Invalid value of 'n'");
+            return -1; // Invalid value of 'n'
+        }
+    }
+
+    static void countEvenOddDigits(int[] num){
+        int evenCount=0;
+        int oddCount=0;
+
+        int arrayNums[] = num;
+        for(int i=0; i<arrayNums.length; i++){
+            if(arrayNums[i]%2==0){
+                evenCount++;
+            }else if(arrayNums[i]%2!=0){
+                oddCount++;
             }
         }
-        String toUpperCaseString = new String(charArray);
-        System.out.println("To Uppercase: "+toUpperCaseString);
+        System.out.println("Even count: "+evenCount);
+        System.out.println("Odd count: "+oddCount);
     }
-
-
-    private static void toLowerCase(String inputStr){
-        char[] charArray = inputStr.toCharArray();
-        for(int i=0; i<charArray.length; i++){
-            if(charArray[i] >= 'A' && charArray[i] <= 'Z'){
-                charArray[i] += 32;
-            }
-        }
-        String toLowerCaseString = new String(charArray);
-        System.out.println("To Lowercase: "+toLowerCaseString);
-    }
-
-
 }
+
+
+
+// 3 4 1 2      1 2 3 4
+// len=4
+// 2nd = 2
+
+
