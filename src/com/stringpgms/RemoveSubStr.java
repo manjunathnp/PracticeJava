@@ -13,7 +13,11 @@ public class RemoveSubStr {
         String subStr = sc.nextLine();
 
         removeSubString(inputStr, subStr);
+
+        //splitSubString("this is string", "string");
     }
+
+
 
     private static void removeSubString(String inputStr, String subStr) {
         String[] words = inputStr.split("\\b"+subStr+"\\b");

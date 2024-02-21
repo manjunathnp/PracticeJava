@@ -33,7 +33,7 @@ public class V_Sort_Arrays
 		String[] str = {"Jan", "Feb", "Mar", "apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "dec"};
 		Arrays.sort(str, String.CASE_INSENSITIVE_ORDER);
 		for(String s: str)
-			System.out.println(s+" ");
+			System.out.print(s+" ");
 		
 		//Test
 
