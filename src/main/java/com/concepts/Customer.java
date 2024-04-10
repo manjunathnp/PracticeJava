@@ -1,10 +1,10 @@
 package com.concepts;
 
-public class Person {
+public class Customer {
     int age;
     String name;
 
-    Person(int age, String name){
+    Customer(int age, String name){
         this.age=age;
         this.name=name;
     }
@@ -15,10 +15,10 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person person1=new Person(21, "David");
+        Customer person1=new Customer(21, "David");
         person1.displayInfo();
 
-        Person person2=new Person(22, "Mark");
+        Customer person2=new Customer(22, "Mark");
         person2.displayInfo();
     }
 }
