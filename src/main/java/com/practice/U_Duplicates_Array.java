@@ -7,7 +7,7 @@ public class U_Duplicates_Array
 	{
 		String[] a = {"Java", "C", "C#", "C++", "C"};
 		
-		boolean status = false;
+		boolean duplicates = false;
 		
 		System.out.println("Duplicate: ");
 		for(int i=0; i<a.length; i++)
@@ -17,12 +17,12 @@ public class U_Duplicates_Array
 				if(a[i] == a[j])
 				{
 					System.out.println(a[i]);
-					status = true;
+					duplicates = true;
 				}
 				
 			}
 		}
-		if(status = false)
+		if(duplicates = false)
 		{
 			System.out.println("No Duplicates");
 		}
