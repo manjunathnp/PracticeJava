@@ -9,13 +9,13 @@ public class LengthOfString {
         System.out.println("Enter the string: ");
         String inputStr = sc.nextLine();
 
-        lengthOfStrWithoutInbuiltMethod(inputStr);
+        //lengthOfStrWithoutInbuiltMethod(inputStr);
 
         lengthOfStrWithInbuiltMethod(inputStr);
 
-        lengthOfStrWithoutInbuiltMethodIgnoringSpaces(inputStr);
+        //lengthOfStrWithoutInbuiltMethodIgnoringSpaces(inputStr);
 
-        spacesCount(inputStr);
+        //spacesCount(inputStr);
     }
 
     private static void spacesCount(String inputStr) {

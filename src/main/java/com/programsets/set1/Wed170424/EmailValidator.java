@@ -1,4 +1,4 @@
-package com.revision.redo;
+package com.programsets.set1.Wed170424;
 
 import java.util.Scanner;
 
@@ -11,10 +11,10 @@ public class EmailValidator {
         emailValidator(email);
     }
     private static void emailValidator(String email){
-        int atIndex = email.indexOf("@");
-        int dotIndex = email.lastIndexOf(".");
+        int atIndex = email.indexOf('@');
+        int dotIndex = email.lastIndexOf('.');
 
-        if(atIndex>0 && atIndex < email.length()-1 && dotIndex < email.length()-1 && dotIndex>atIndex && dotIndex-1!=atIndex){
+        if(atIndex>0 && dotIndex>atIndex && dotIndex<email.length()-1 && dotIndex-1 != atIndex){
             System.out.println("Valid Email");
         }else {
             System.out.println("Invalid Email");
